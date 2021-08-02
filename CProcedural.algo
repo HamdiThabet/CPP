@@ -1,0 +1,21 @@
+ ALGORITHM dot_Product
+ VAR
+vectors = [7, 1, 1],[6, 0, 2], [8, 7, 0], [7, 1, 2], [2, 3 ,8], [0, 3, 0]
+ BEGIN
+ Read(n);
+ function dotProduct(vector1, vector2){
+    let result = 0;
+    for(let i = 0; i < vector1.length; i++){
+        result += vector1[i] * vector2[i]
+      }
+    return result
+  }
+  
+  for(let i = 0; i < vectors.length; i++){
+   
+      if(dotProduct(vectors[i], vectors[i]) === 0){
+          print(`{vectors[i]} and {vectors[i]} are orthogonal `)
+      }
+    
+  }
+  END
